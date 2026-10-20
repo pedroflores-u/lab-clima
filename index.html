@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>App del Clima - Tecsup</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Consulta el Clima en Perú</h1>
+    <p>Obtén información meteorológica en tiempo real mediante la API Open-Meteo</p>
+  </header>
+
+  <main>
+    <section class="buscador">
+      <!-- Selector de ciudades con minúsculas en 'value' -->
+      <select id="selectorCiudad">
+        <option value="lima">Lima</option>
+        <option value="cusco">Cusco</option>
+        <option value="arequipa">Arequipa</option>
+        <option value="trujillo">Trujillo</option>
+        <option value="piura">Piura</option>
+        <option value="iquitos">Iquitos</option>
+        <option value="puno">Puno</option>
+        <option value="huancayo">Huancayo</option>
+      </select>
+
+      <!-- Botón de consulta -->
+      <button id="btnConsultar">Ver clima</button>
+    </section>
+
+    <!-- Párrafo para mensajes de error -->
+    <p id="mensajeError" class="error"></p>
+
+    <!-- Sección donde se inyectará la tarjeta de resultados -->
+    <section id="resultado"></section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
